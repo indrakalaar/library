@@ -1,7 +1,7 @@
 const express = require('express'); 
 const path = require ('path'); 
 const cors = require('cors');
-
+const port = process.env.PORT || 5000;
 const nav= [
     {
         link:"/books",
@@ -69,6 +69,6 @@ app.get('/',function(req,res){
 
 
 
-app.listen(5000,()=>{
+app.listen(port,()=>{
     console.log("Server Ready on 5000");
 });
