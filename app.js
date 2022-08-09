@@ -23,6 +23,7 @@ const nav= [
 
 const loginRouter = require('./src/routes/loginroute');
 const signupRouter = require('./src/routes/signuproute');
+// Part #1 Point 3
 const homeRouter = require('./src/routes/homerouter');
 const booksRouter = require('./src/routes/booksroute');
 const authorsRouter = require('./src/routes/authorsroute');
@@ -68,7 +69,7 @@ app.get('/',function(req,res){
 
 
 
-
+// Part #1 Point 1
 app.listen(port,()=>{
     console.log("Server Ready on 5000");
 });
